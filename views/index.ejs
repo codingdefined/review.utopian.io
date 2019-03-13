@@ -164,7 +164,7 @@
       }
 
       .footerlink:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 1px;
@@ -471,32 +471,32 @@
         window.cookieconsent.initialise({
           palette: {
             popup: {
-              background: '#4786ff',
-              text: '#ffffff'
+              background: "#4786ff",
+              text: "#ffffff"
             },
             button: {
-              background: 'transparent',
-              text: '#fff',
-              border: '#fff'
+              background: "transparent",
+              text: "#fff",
+              border: "#fff"
             }
           },
           content: {
-            href: 'https://join.utopian.io/cookies'
+            href: "https://join.utopian.io/cookies"
           }
         });
       };
 
       function myFunction() {
-        var x = document.getElementById('myTopnav');
-        if (x.className === 'topnav') {
-          x.className += ' responsive';
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
         } else {
-          x.className = 'topnav';
+          x.className = "topnav";
         }
       }
       // var elems = document.querySelectorAll('select');
       // var instances = M.FormSelect.init(elems)
-      $('#category').material_select();
+      $("#category").material_select();
     </script>
     <script type="text/javascript">
       let bugs = `<div class="question-block">
@@ -1150,94 +1150,78 @@
                   					</select>
                   					</div>`;
 
-      let blog = `<div class="question-block">
-                  						<h6>How would you describe the formatting, language and overall presentation of the post?</h6>
-                  						<select id="6">
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="0">The quality of the post is fantastic.</option>
-                  					<option value="-3">The post is of decent quality, but there is room for improvement.</option>
-                  					<option value="-14">The quality of the post is below average.</option>
-                  					<option value="-30">The post is hard to read and the content is sometimes hard to understand.</option>
-                  					</select>
-                  					</div>
-                  
-                  						<div class="question-block">
-                  						<h6>How would you rate the overall value of this contribution on the open source community and ecosystem?</h6>
-                  						<select id="7">
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="5"	>This contribution brings great and impactful value, and can be used for applications outside the specific project. </option>
-                  					<option value="0">This contribution adds significant value to the open source community and ecosystem, or is of critical importance to the specific project.</option>
-                  					<option value="-5">This contribution adds some value to the open source community and ecosystem or is only valuable to the specific project.</option>
-                  					<option value="-20">This contribution adds nearly no value to the open source community and ecosystem or the specific project. </option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>What is the overall volume of the blog post?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="5">More than 1,300 words</option>
-                  					<option value="0">800-1,300 words</option>
-                  					<option value="-8">500-800 words</option>
-                  					<option value="-25">Less than 500 words</option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>What is the topic category of this blog post?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="0">Project introduction or project promotion</option>
-                  					<option value="-1.5">Development log / release notes</option>
-                  					<option value="-10">Project generic news</option>
-                  					<option value="-40">The topic is barely reletaed to the project.</option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>Is the post a part of a series?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="0">It is clear that it is a part of an ongoing series of posts.</option>
-                  					<option value="-3">It is clear that it is the first post of an upcoming series.</option>
-                  					<option value="-8">It is the first post from the author.</option>
-                  					<option value="-10">The post is not a part of any series.</option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>Was relevant quality graphic and video content included in this post?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="2">Yes, at least 4 distinguishable instances of graphic or video content were included.</option>
-                  					<option value="0">Yes, between 2 and 3 distinguishable instances of graphic or video content were included.</option>
-                  					<option value="-6">A single instance of graphic or video content was included.</option>
-                  					<option value="-10">No graphic or video content was included or the content was irrelevant.</option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>How familiar is the author with the project discussed in the post?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="0">It is clear that they are closely familiar with the project and its details.</option>
-                  					<option value="-2">The author offers some valuable insights about the project.</option>
-                  					<option value="-10">Most of the blog post contains information gathered from other sources.</option>
-                  					<option value="-40">The author knows only little or nothing about the project.</option>
-                  					</select>
-                  					</div>
-                  
-                  					<div class="question-block">
-                  						<h6>What is the timeframe of the events and announcements discussed in the blog post, and does it include reference to similar projects?</h6>
-                  						<select >
-                  					<option value="" disabled selected>Select your option</option>
-                  					<option value="5">Both recent and future events, as well as comparison with similar projects is included.</option>
-                  					<option value="0">Events more recent than 2 weeks, or future events related the project are included.</option>
-                  					<option value="-10">Comparison with similar projects is included.</option>
-                  					<option value="-15">None of these topics are discussed in the post.</option>
-                  					</select>
-                  					</div>
-                  					`;
+      let blog = `
+        <div class="question-block">
+          <h6>Is the submission easy to read and understand?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="10">The post is clear and easy to read</option>
+            <option value="-3">The post is of decent quality, but there is room for improvement.</option>
+            <option value="-14">The quality of the post is below average.</option>
+            <option value="-50">The post is hard to read and the content is sometimes hard to understand.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>Is the submission enjoyable to read?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="15">The submission was fun and enjoyable to read.</option>
+            <option value="-3">The submission was a bit dry, but still enjoyable.</option>
+            <option value="-5">The submission wasn’t much fun to read.</option>
+            <option value="-10">The submission was no fun at all to read.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>Does the submission include significant editorial and/or personal content that represents the writer’s experience or views?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="5">The submission has a great deal of editorial and/or personal content, making it a unique experience.</option>
+            <option value="-3">The submission has some editorial and/or personal content.</option>
+            <option value="-5">The submission has little editorial and/or personal content.</option>
+            <option value="-20">The submission has no editorial and/or personal content.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>What is the topic category of this blog post?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="0">Project introduction or project promotion by project or person appointed by project.</option>
+            <option value="-5">Development log / release notes / project news by project or person appointed by project.</option>
+            <option value="-15">Project promotion by non-aligned person.</option>
+            <option value="-90">The topic is barely related to the project.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>Was relevant quality graphic and video content included in this post?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="2">Yes, at least 4 distinguishable instances of graphic or video content were included.</option>
+            <option value="0">Yes, between 2 and 3 distinguishable instances of graphic or video content were included.</option>
+            <option value="-5">A single instance of graphic or video content was included.</option>
+            <option value="-10">No graphic or video content was included or the content was irrelevant.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>How much insight and knowledge does the author bring regarding the project discussed in the post?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="0">It is clear that the author is closely familiar with the project and its details.</option>
+            <option value="-2">The author offers some valuable insights about the project.</option>
+            <option value="-15">The author offers little or no unique insight on information about the project.</option>
+            <option value="-40">The author knows only little or nothing about the project.</option>
+          </select>
+        </div>
+        <div class="question-block">
+          <h6>What is the timeframe of the events and announcements discussed in the blog post, and does it include reference to similar projects?</h6>
+          <select id="6">
+            <option value="" disabled selected>Select your option</option>
+            <option value="0">Both recent and future events, as well as comparison with similar projects is included.</option>
+            <option value="-2">Events more recent than 2 weeks, or future events related the project are included.</option>
+            <option value="-5">Comparison with similar projects is included.</option>
+            <option value="-9">None of these topics are discussed in the post.</option>
+          </select>
+        </div>
+      `;
 
       let suggestions = `<div class="question-block">
                   						<h6>If implemented, how much impact on the functionality and/usability of the project will this suggestion have?</h6>
@@ -1729,59 +1713,59 @@
         }
         if (sum < 0) sum = 0;
         if (sum > 100) sum = 100;
-        document.getElementById('result').innerHTML = sum;
+        document.getElementById("result").innerHTML = sum;
         // var elem = document.querySelectorAll('.modal');
         // var instance = M.Modal.init(elem);
-        $('.modal').modal();
-        let textarea = document.getElementById('textarea1');
-        let copy = document.getElementById('copy');
+        $(".modal").modal();
+        let textarea = document.getElementById("textarea1");
+        let copy = document.getElementById("copy");
         let comment = `<a class="waves-effect waves-light btn modal-trigger" style="background: transparent; color: black; border: 1px solid;" href="#modal1">Footer Comment Text</a>`;
 
-        let comid = document.getElementById('comment');
+        let comid = document.getElementById("comment");
 
         comid.innerHTML = comment;
-        copy.addEventListener('click', function() {
+        copy.addEventListener("click", function() {
           textarea.select();
-          document.execCommand('Copy');
+          document.execCommand("Copy");
         });
         return false;
       }
 
       function check() {
-        let category = document.getElementById('category').value;
+        let category = document.getElementById("category").value;
 
         let cat;
 
-        if (category == 'analysis') cat = 0;
-        if (category == 'blog') cat = 1;
-        if (category == 'copywriting') cat = 2;
-        if (category == 'development') cat = 3;
-        if (category == 'documentation') cat = 4;
-        if (category == 'bugs') cat = 5;
-        if (category == 'graphics') cat = 6;
-        if (category == 'suggestions') cat = 7;
-        if (category == 'tutorials') cat = 8;
-        if (category == 'video-tuts') cat = 9;
-        if (category == 'visibility') cat = 10;
-        if (category == 'tasks') cat = 11;
-        if (category == 'translations') cat = 12;
-        if (category == 'antiabuse') cat = 13;
+        if (category == "analysis") cat = 0;
+        if (category == "blog") cat = 1;
+        if (category == "copywriting") cat = 2;
+        if (category == "development") cat = 3;
+        if (category == "documentation") cat = 4;
+        if (category == "bugs") cat = 5;
+        if (category == "graphics") cat = 6;
+        if (category == "suggestions") cat = 7;
+        if (category == "tutorials") cat = 8;
+        if (category == "video-tuts") cat = 9;
+        if (category == "visibility") cat = 10;
+        if (category == "tasks") cat = 11;
+        if (category == "translations") cat = 12;
+        if (category == "antiabuse") cat = 13;
 
         let answers = `REPLACE WITH FEEDBACK\n\nYour contribution has been evaluated according to [Utopian policies and guidelines](https://join.utopian.io/guidelines), as well as a predefined set of questions pertaining to the category.\n\nTo view those questions and the relevant answers related to your post, [click here](https://review.utopian.io/result/${cat}/`;
-        oSels = document.getElementById('form1').getElementsByTagName('select');
+        oSels = document.getElementById("form1").getElementsByTagName("select");
 
         for (i = 0; i < oSels.length; i++) {
-          answers = answers + oSels[i].options.selectedIndex + '-';
+          answers = answers + oSels[i].options.selectedIndex + "-";
         }
         feedend =
-          category == 'translations'
+          category == "translations"
             ? `).\n\n---- \nChat with us on [Discord](https://discord.gg/vMGmDSm)`
             : `).\n\n---- \nNeed help? Chat with us on [Discord](https://discord.gg/uTyJkNm).\n\n[[utopian-moderator]](https://join.utopian.io/)`;
         answers = answers + feedend;
         console.log(answers);
-        let textarea = document.getElementById('textarea1');
+        let textarea = document.getElementById("textarea1");
         textarea.value = answers;
-        textarea.style.height = '440px';
+        textarea.style.height = "440px";
       }
     </script>
 
@@ -1792,35 +1776,35 @@
                   			<center><h5 style="color: black">Score: <span id="result"></span></h5></center>
                   		</form>`;
 
-      let getcat = document.getElementById('getcat');
+      let getcat = document.getElementById("getcat");
 
-      getcat.addEventListener('click', function() {
-        let category = document.getElementById('category').value;
+      getcat.addEventListener("click", function() {
+        let category = document.getElementById("category").value;
 
-        if (category == 'analysis') form = formstart + analysis + formend;
-        if (category == 'blog') form = formstart + blog + formend;
-        if (category == 'copywriting') form = formstart + copywriting + formend;
-        if (category == 'development') form = formstart + development + formend;
-        if (category == 'documentation')
+        if (category == "analysis") form = formstart + analysis + formend;
+        if (category == "blog") form = formstart + blog + formend;
+        if (category == "copywriting") form = formstart + copywriting + formend;
+        if (category == "development") form = formstart + development + formend;
+        if (category == "documentation")
           form = formstart + documentation + formend;
-        if (category == 'bugs') form = formstart + bugs + formend;
-        if (category == 'graphics') form = formstart + graphics + formend;
-        if (category == 'suggestions') form = formstart + suggestions + formend;
-        if (category == 'tutorials') form = formstart + tutorials + formend;
-        if (category == 'video-tuts') form = formstart + videotuts + formend;
-        if (category == 'visibility') form = formstart + visibility + formend;
-        if (category == 'tasks') form = formstart + tasks + formend;
-        if (category == 'translations')
+        if (category == "bugs") form = formstart + bugs + formend;
+        if (category == "graphics") form = formstart + graphics + formend;
+        if (category == "suggestions") form = formstart + suggestions + formend;
+        if (category == "tutorials") form = formstart + tutorials + formend;
+        if (category == "video-tuts") form = formstart + videotuts + formend;
+        if (category == "visibility") form = formstart + visibility + formend;
+        if (category == "tasks") form = formstart + tasks + formend;
+        if (category == "translations")
           form = formstart + translations + formend;
-        if (category == 'antiabuse') form = formstart + antiabuse + formend;
+        if (category == "antiabuse") form = formstart + antiabuse + formend;
 
-        let formhere = document.getElementById('formhere');
+        let formhere = document.getElementById("formhere");
         formhere.innerHTML = `${form}`;
-        let dispscore = document.getElementById('dispscore');
+        let dispscore = document.getElementById("dispscore");
         // var elems = document.querySelectorAll('select');
         // var instances = M.FormSelect.init(elems);
-        $('select').material_select();
-        dispscore.addEventListener('click', calcTotal);
+        $("select").material_select();
+        dispscore.addEventListener("click", calcTotal);
       });
     </script>
   </body>
