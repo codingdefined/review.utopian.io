@@ -570,7 +570,7 @@ let questionnaire = [
       answers: [
         "Select your option",
         "Yes, it’s closely related to the uses and applications of the project and may enhance it further toward project goals",
-        "It is related and may add value, but has no direct relation to the main purpose and/or applications of the project.",
+        "It is related and may add value",
         "It is loosely related to one of purposes, applications or goals of the project and may add some value to it.",
         "It is not related to the project goals at all and holds no potential added-value."
       ]
@@ -579,21 +579,10 @@ let questionnaire = [
       question: "Is the proposal realistic and feasible?",
       answers: [
         "Select your option",
-        "Yes, it can definitely be implemented and is important enough to warrant the developers",
+        "Yes, it can definitely be implemented and is important enough to warrant the developers’ attention and time.",
         "Yes, it can definitely be implemented, but is not likely to get noticed by the development team immediately.",
         "It can be implemented in theory, but no recommendations or guidelines were included in the suggestion post.",
         "No, it’s impossible or non-cost-effective to implement."
-      ]
-    },
-    {
-      question:
-        "Has the user provided any mockups (illustrations) of potential suggestion implementation appearance?",
-      answers: [
-        "Select your option",
-        "Yes, and they’re of excellent quality",
-        "No, but the mockups are inapplicable for this suggestion.",
-        "Yes, but the quality of the mockups is poor.",
-        "No, there are no mockups included even though they are needed / No potential solution was presented."
       ]
     },
     {
@@ -614,8 +603,19 @@ let questionnaire = [
         "Select your option",
         "No, it’s unique or very rare.",
         "Yes, but it’s a feature of high importance for this kind of project.",
-        `It's common, but it will have some measurable positive impact on the user experience or product functionality.`,
+        `Yes, but it will have some measurable positive impact on the user experience or product functionality.`,
         "It’s extremely common and may have been left out intentionally."
+      ]
+    },
+    {
+      question:
+        "Has the user provided any mockups (illustrations) of potential suggestion implementation appearance?",
+      answers: [
+        "Select your option",
+        "Yes, and they’re of excellent quality",
+        "Yes, the quality is good but there is room for improvement.",
+        "Yes, but the quality of the mock ups are poor.",
+        "No, there are no mockups included even though they are needed / No potential solution was presented."
       ]
     },
     {
@@ -623,10 +623,10 @@ let questionnaire = [
         "How would you describe the formatting, language and overall presentation of the post?",
       answers: [
         "Select your option",
-        "Good.",
-        "Average.",
-        "Below Average.",
-        "Low Quality."
+        "The post is clear and easy to understand.",
+        "The post is of decent quality, but there is room for improvement.",
+        "The quality of the post is below average.",
+        "The post content is sometimes hard to understand."
       ]
     },
     {
@@ -634,9 +634,9 @@ let questionnaire = [
         "How would you rate the overall value of this contribution on the open source community and ecosystem?",
       answers: [
         "Select your option",
-        "This contribution brings great and impactful value, and can be used for applications outside the specific project.",
-        "This contribution adds significant value to the open source community and ecosystem, or is of critical importance to the specific project.",
-        "This contribution adds some value to the open source community and ecosystem or is only valuable to the specific project.",
+        "It brings great and impactful value, and can be used for applications outside the specific project.",
+        "It adds significant value to the open source community and ecosystem, or is of critical importance to the specific project.",
+        "It adds some value to the open source community and ecosystem or is only valuable to the specific project.",
         "This contribution adds nearly no value to the open source community and ecosystem or the specific project."
       ]
     }
